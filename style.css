@@ -176,6 +176,15 @@ a {
 .paint .paint-info {
 	margin-top: 0.5rem;
 }
+.paint .paint-circle img {
+	border-radius: 50%;
+	opacity: 0%;
+	transition: opacity 0.5s;
+}
+.paint:hover .paint-circle img,
+.paint:active .paint-circle img {
+	opacity: 100%;
+}
 
 .mission {
 	display: grid;
@@ -199,6 +208,7 @@ a {
 
 .samples {
 	display: grid;
+
 	grid-template-columns: 1fr 1fr;
 	gap: 0.5rem;
 	margin-bottom: 2rem;
@@ -207,9 +217,7 @@ a {
 .samples .samples-headline {
 	display: grid;
 	place-items: center;
-	gap: 1rem;
-
-	padding: 25% 0;
+	aspect-ratio: 1/1;
 	background-color: rgb(229, 226, 221);
 	border-radius: 1rem;
 }
@@ -218,8 +226,11 @@ a {
 	max-width: 12ch;
 	text-align: center;
 	color: #1f1e1e;
-	font-size: 1.3rem;
+	font-size: 1.8rem;
 	font-weight: 400;
+}
+.samples .samples-link {
+	align-self: baseline;
 }
 .samples .samples-image {
 	background-image: url(/images/index-samples-image.jpeg);
@@ -233,7 +244,6 @@ a {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	align-items: center;
-	justify-items: space-between;
-	gap: 1rem;
+	gap: 3rem;
 	margin-bottom: 2rem;
 }
