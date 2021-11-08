@@ -103,7 +103,7 @@ a {
 }
 
 .paints {
-	margin-bottom: 3rem;
+	margin-bottom: 4rem;
 }
 
 .paints .paints-title {
@@ -168,4 +168,23 @@ a {
 }
 .paint .paint-info {
 	margin-top: 0.5rem;
+}
+
+.mission {
+	display: grid;
+	justify-items: center;
+	gap: 1rem;
+	border-bottom: 1px solid rgba(92, 92, 92, 0.2);
+	padding-bottom: 3rem;
+	margin-bottom: 1rem;
+}
+.mission .mission-title {
+	color: rgb(60, 60, 60);
+	font-family: "Maison Neue", sans-serif;
+	font-size: 0.5rem;
+}
+.mission .mission-description {
+	width: 30ch;
+	text-align: center;
+	font-size: 2rem;
 }
