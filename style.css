@@ -49,6 +49,9 @@ a {
 	align-items: center;
 	margin-bottom: 1rem;
 	border-bottom: 1px solid rgba(92, 92, 92, 0.2);
+	position: sticky;
+	top: 0;
+	background-color: white;
 }
 
 .header .nav-bar {
@@ -190,7 +193,8 @@ a {
 .mission .mission-description {
 	max-width: 30ch;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.5rem;
+	font-weight: 400;
 }
 
 .samples {
@@ -204,8 +208,8 @@ a {
 	display: grid;
 	place-items: center;
 	gap: 1rem;
-	font-size: 1.5rem;
-	padding: 33% 0;
+
+	padding: 25% 0;
 	background-color: rgb(229, 226, 221);
 	border-radius: 1rem;
 }
@@ -213,6 +217,9 @@ a {
 .samples .samples-headline-content {
 	max-width: 12ch;
 	text-align: center;
+	color: #1f1e1e;
+	font-size: 1.3rem;
+	font-weight: 400;
 }
 .samples .samples-image {
 	background-image: url(/images/index-samples-image.jpeg);
@@ -220,4 +227,13 @@ a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 1rem;
+}
+
+.partners {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: center;
+	justify-items: space-between;
+	gap: 1rem;
+	margin-bottom: 2rem;
 }
