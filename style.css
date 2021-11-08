@@ -184,7 +184,7 @@ a {
 	font-size: 0.5rem;
 }
 .mission .mission-description {
-	width: 30ch;
+	max-width: 30ch;
 	text-align: center;
 	font-size: 2rem;
 }
