@@ -218,13 +218,15 @@ a {
 
 .samples .samples-headline {
 	display: grid;
-	place-items: center;
+	justify-items: center;
+	gap: 1rem;
 	aspect-ratio: 1/1;
 	background-color: rgb(229, 226, 221);
 	border-radius: 1rem;
 }
 
 .samples .samples-headline-content {
+	align-self: flex-end;
 	max-width: 12ch;
 	text-align: center;
 	color: #1f1e1e;
@@ -278,15 +280,20 @@ a {
 
 .examples .examples-headline {
 	display: grid;
-	place-items: center;
+	gap: 1rem;
+	justify-items: center;
 	background-color: #c6bc8a;
 	border-radius: 1rem;
 }
 
 .examples .examples-headline-content {
+	align-self: flex-end;
 	max-width: 12ch;
 	color: #425e44;
 	font-weight: 400;
 	font-size: 1.8rem;
 	text-align: center;
+}
+.examples .examples-link {
+	align-self: baseline;
 }
