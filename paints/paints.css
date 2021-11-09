@@ -1,0 +1,333 @@
+@font-face {
+	font-family: "Recife Display";
+	src: url(/fonts/RecifeDisplay-Book.woff2);
+}
+
+@font-face {
+	font-family: "Maison Neue";
+	src: url(/fonts/MaisonNeue-Mono.woff2);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* border: 1px solid black; */
+}
+
+body {
+	font-family: "Recife Display", serif;
+	margin: 0 2rem;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.cta {
+	color: white;
+	background-color: rgb(31, 30, 30);
+	border: 1px solid rgb(31, 30, 30);
+	font-size: 0.6rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	font-weight: 900;
+}
+
+.cta:hover,
+.cta:active {
+	color: rgb(31, 30, 30);
+	background-color: white;
+}
+
+.header {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid rgba(92, 92, 92, 0.2);
+	position: sticky;
+	top: 0;
+	background-color: rgba(255, 255, 255, 0.95);
+	z-index: 100;
+}
+
+.header .nav-bar {
+	font-family: "Maison Neue", sans-serif;
+}
+
+.header .nav-bar-list {
+	list-style-type: none;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 1rem;
+	font-size: 0.8rem;
+}
+
+.header .nav-bar-link,
+.header .logo-link {
+	color: black;
+}
+.header .logo {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.background {
+	display: grid;
+	place-content: center;
+	background-image: url(/images/paints-background.jpeg);
+	height: calc(75vh - 5rem);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 1rem;
+	margin-bottom: 2.5rem;
+}
+
+.background .background-headline {
+	color: white;
+	width: 12ch;
+	font-size: 3rem;
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+}
+.paints {
+	margin-bottom: 4rem;
+}
+
+.paints .paints-list {
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.paints .paint-link {
+	color: rgb(60, 60, 60);
+	font-size: 0.5rem;
+	text-align: center;
+}
+.paint .paint-circle {
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+}
+
+.paint .paint-circle.kobe {
+	background-color: rgb(35, 40, 32);
+}
+.paint .paint-circle.pantanal {
+	background-color: rgb(38, 57, 58);
+}
+.paint .paint-circle.glenveagh {
+	background-color: rgb(75, 86, 83);
+}
+.paint .paint-circle.hazel {
+	background-color: rgb(118, 124, 115);
+}
+.paint .paint-circle.kigali {
+	background-color: rgb(68, 95, 69);
+}
+.paint .paint-circle.greensburg {
+	background-color: rgb(145, 160, 132);
+}
+.paint .paint-circle.eslamabad {
+	background-color: rgb(181, 178, 154);
+}
+.paint .paint-circle.havasupai {
+	background-color: rgb(161, 79, 61);
+}
+.paint .paint-circle.st-mary {
+	background-color: rgb(134, 100, 99);
+}
+.paint .paint-circle.granada {
+	background-color: rgb(134, 100, 99);
+}
+.paint .paint-circle.chamarel {
+	background-color: rgb(162, 69, 74);
+}
+
+.paint .paint-circle.navajo {
+	background-color: rgb(181 79 72);
+}
+.paint .paint-circle.arizona {
+	background-color: rgb(203, 109, 104);
+}
+.paint .paint-circle.broken-hill {
+	background-color: rgb(196, 193, 198);
+}
+
+.paint .paint-circle.trouville {
+	background-color: rgb(222, 219, 220);
+}
+.paint .paint-circle.wexford {
+	background-color: rgb(205, 208, 206);
+}
+.paint .paint-circle.vilnius {
+	background-color: rgb(223, 195, 175);
+}
+.paint .paint-circle.baaja {
+	background-color: rgb(238, 199, 166);
+}
+.paint .paint-circle.baku {
+	background-color: rgb(230, 204, 179);
+}
+.paint .paint-circle.ajman {
+	background-color: rgb(251, 238, 216);
+}
+.paint .paint-circle.merzouga {
+	background-color: rgb(220, 205, 197);
+}
+.paint .paint-circle.sidi-ali {
+	background-color: rgb(222, 208, 203);
+}
+.paint .paint-circle.ricasoli {
+	background-color: rgb(211, 170, 169);
+}
+.paint .paint-circle.monte-castelo {
+	background-color: rgb(248, 234, 191);
+}
+.paint .paint-circle.burano {
+	background-color: rgb(243, 202, 89);
+}
+.paint .paint-circle.gallipoli {
+	background-color: rgb(236, 195, 99);
+}
+.paint .paint-circle.bo-kaap {
+	background-color: rgb(207, 93, 60);
+}
+.paint .paint-circle.oyo {
+	background-color: rgb(175, 162, 144);
+}
+.paint .paint-circle.belleville {
+	background-color: rgb(189, 186, 175);
+}
+.paint .paint-circle.dakhla {
+	background-color: rgb(214, 208, 196);
+}
+.paint .paint-circle.ponticelli {
+	background-color: rgb(223, 201, 174);
+}
+.paint .paint-circle.rimini {
+	background-color: rgb(215, 196, 165);
+}
+.paint .paint-circle.niigata {
+	background-color: rgb(81, 27, 32);
+}
+
+.paint .paint-circle.port-louis {
+	background-color: rgb(10, 12, 27);
+}
+.paint .paint-circle.khao-sok {
+	background-color: rgb(35, 15, 21);
+}
+.paint .paint-circle.baden-baden {
+	background-color: rgb(35, 33, 33);
+}
+.paint .paint-circle.karlstad {
+	background-color: rgb(58, 44, 56);
+}
+.paint .paint-circle.chebourg {
+	background-color: rgb(55, 60, 70);
+}
+.paint .paint-circle.reign {
+	background-color: rgb(105, 114, 125);
+}
+.paint .paint-circle.chefchaouen {
+	background-color: rgb(156, 174, 171);
+}
+.paint .paint-circle.oldbury {
+	background-color: rgb(68, 67, 68);
+}
+.paint .paint-circle.bampton {
+	background-color: rgb(101, 100, 103);
+}
+.paint .paint-circle.saint-malo {
+	background-color: rgb(128, 126, 125);
+}
+.paint .paint-circle.portland {
+	background-color: rgb(169, 168, 163);
+}
+.paint .paint-circle.nova {
+	background-color: rgb(127, 135, 87);
+}
+.paint .paint-circle.rosemont {
+	background-color: rgb(198, 188, 138);
+}
+.paint .paint-circle.barilius {
+	background-color: rgb(177, 159, 156);
+}
+.paint .paint-circle.courchevel {
+	background-color: rgb(250, 250, 244);
+}
+
+.paint .paint-info {
+	margin-top: 0.5rem;
+}
+.paint .paint-circle img {
+	border-radius: 50%;
+	opacity: 0%;
+	transition: opacity 0.5s;
+}
+.paint:hover .paint-circle img,
+.paint:active .paint-circle img {
+	opacity: 100%;
+}
+
+.newsletter-and-social {
+	display: grid;
+	padding: 1rem;
+	grid-template-columns: 2fr 1fr;
+	border-top: 1px solid rgba(92, 92, 92, 0.2);
+	border-bottom: 1px solid rgba(92, 92, 92, 0.2);
+	margin-bottom: 2rem;
+}
+
+.newsletter {
+	border-right: 1px solid rgba(92, 92, 92, 0.2);
+}
+.social {
+	padding-left: 1rem;
+	justify-self: center;
+}
+
+.newsletter .newsletter-headline {
+	width: 12ch;
+	color: rgb(31, 30, 30);
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
+.newsletter .newsletter-input {
+	font-family: "Maison Neue", sans-serif;
+	width: 90%;
+	padding: 0.5rem;
+	font-size: 1.3rem;
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.social .social-headline {
+	text-align: center;
+	width: 15ch;
+	color: rgb(31, 30, 30);
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
+
+.social .social-nav-list {
+	list-style-type: none;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 5rem 5rem;
+	gap: 1rem;
+}
+.footer {
+	margin-bottom: 1rem;
+}

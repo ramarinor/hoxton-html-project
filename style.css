@@ -320,7 +320,7 @@ a {
 .newsletter-and-social {
 	display: grid;
 	padding: 1rem;
-	grid-template-columns: 3fr 2fr;
+	grid-template-columns: 2fr 1fr;
 	border-top: 1px solid rgba(92, 92, 92, 0.2);
 	border-bottom: 1px solid rgba(92, 92, 92, 0.2);
 	margin-bottom: 2rem;
@@ -331,9 +331,11 @@ a {
 }
 .social {
 	padding-left: 1rem;
+	justify-self: center;
 }
 
 .newsletter .newsletter-headline {
+	width: 12ch;
 	color: rgb(31, 30, 30);
 	font-size: 2rem;
 	font-weight: 400;
@@ -341,13 +343,16 @@ a {
 }
 .newsletter .newsletter-input {
 	font-family: "Maison Neue", sans-serif;
+	width: 90%;
 	padding: 0.5rem;
-	font-size: 1.7rem;
+	font-size: 1.3rem;
 	display: block;
 	margin-bottom: 1rem;
 }
 
 .social .social-headline {
+	text-align: center;
+	width: 15ch;
 	color: rgb(31, 30, 30);
 	font-size: 1.5rem;
 	font-weight: 400;
