@@ -425,6 +425,7 @@ a {
 
 	.reasons {
 		grid-template-columns: initial;
+		justify-content: center;
 	}
 
 	.paints .paints-title {
