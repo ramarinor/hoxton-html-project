@@ -309,10 +309,13 @@ a {
 }
 
 .testimonials {
-	overflow-x: scroll;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 	display: grid;
-	grid-template-columns: repeat(3, 100%);
+	grid-auto-flow: column;
+	grid-auto-columns: 100%;
 	gap: 1rem;
+	margin-bottom: 2rem;
 }
 .testimonials .testimonial {
 	padding: 0 1rem;
@@ -330,6 +333,9 @@ a {
 	padding-top: 1rem;
 	font-family: "Maison Neue", sans-serif;
 	font-size: 0.5rem;
+}
+.testimonial .testimonial-link {
+	color: rgb(66, 94, 68);
 }
 
 .newsletter-and-social {
