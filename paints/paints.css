@@ -308,6 +308,30 @@ a {
 	opacity: 100%;
 }
 
+.testimonials {
+	overflow-x: scroll;
+	display: grid;
+	grid-template-columns: repeat(3, 100%);
+	gap: 1rem;
+}
+.testimonials .testimonial {
+	padding: 0 1rem;
+	font-size: 1.5rem;
+	text-align: center;
+	aspect-ratio: 2/1;
+	color: rgb(66, 94, 68);
+	background-color: rgb(244, 237, 230);
+	display: grid;
+	align-content: center;
+	border-radius: 1rem;
+}
+
+.testimonials .testimonial-author {
+	padding-top: 1rem;
+	font-family: "Maison Neue", sans-serif;
+	font-size: 0.5rem;
+}
+
 .newsletter-and-social {
 	display: grid;
 	padding: 1rem;
@@ -400,6 +424,12 @@ a {
 	}
 }
 
+@media screen and (max-width: 600px) {
+	.testimonials .testimonial {
+		font-size: 1rem;
+	}
+}
+
 @media screen and (max-width: 460px) {
 	body {
 		margin: 0 1rem;
@@ -407,6 +437,10 @@ a {
 
 	.background .background-headline {
 		font-size: 1.7rem;
+	}
+
+	.testimonials .testimonial {
+		font-size: 1rem;
 	}
 
 	.newsletter .newsletter-input {
