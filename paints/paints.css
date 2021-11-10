@@ -51,7 +51,7 @@ a {
 	border-bottom: 1px solid rgba(92, 92, 92, 0.2);
 	position: sticky;
 	top: 0;
-	background-color: rgba(255, 255, 255, 0.95);
+	background-color: rgba(255, 255, 255, 0.9);
 	z-index: 100;
 }
 
@@ -108,7 +108,8 @@ a {
 
 .background {
 	display: grid;
-	place-content: center;
+	grid-template-rows: 1fr auto;
+	place-items: center;
 	background-image: url(/images/paints-background.jpeg);
 	height: calc(75vh - 5rem);
 	background-position: center;
@@ -125,6 +126,23 @@ a {
 	font-weight: 500;
 	margin-bottom: 1.5rem;
 }
+
+.reasons {
+	font-family: "Maison Neue", sans-serif;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 0 2rem;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+.reason {
+	color: white;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 0.5rem;
+	font-size: 0.6rem;
+}
+
 .paints {
 	margin-bottom: 4rem;
 }
@@ -401,6 +419,10 @@ a {
 
 	.background .background-headline {
 		font-size: 2rem;
+	}
+	.reasons {
+		grid-template-columns: initial;
+		justify-content: center;
 	}
 
 	.paints .paints-list {
