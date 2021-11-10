@@ -421,6 +421,16 @@ a {
 	margin-bottom: 1rem;
 }
 
+.newsletter .newsletter-input:valid ~ .newsletter-button {
+	cursor: pointer;
+}
+
+.newsletter .newsletter-input:invalid ~ .newsletter-button {
+	background-color: grey;
+	color: white;
+	cursor: auto;
+}
+
 .social .social-headline {
 	text-align: center;
 	width: 15ch;
