@@ -141,7 +141,7 @@ a {
 	display: grid;
 	grid-template-rows: 1fr auto;
 	place-items: center;
-	background-image: url(/images/paints-background.jpeg);
+	background-image: url(/images/samples-background.jpeg);
 	height: calc(75vh - 5rem);
 	background-position: center;
 	background-size: cover;
@@ -175,11 +175,11 @@ a {
 	backdrop-filter: blur(5px);
 }
 
-.paints {
+.samples {
 	margin-bottom: 4rem;
 }
 
-.paints .paints-list {
+.samples .samples-list {
 	list-style-type: none;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -187,175 +187,173 @@ a {
 	margin-bottom: 1rem;
 }
 
-.paints .paint-link {
+.samples .sample-link {
 	color: rgb(60, 60, 60);
 	font-size: 0.5rem;
 	text-align: center;
 }
-.paint .paint-circle {
+.sample .sample-square {
+	border-color: #e5e0da;
+	color: white;
+	border-radius: 5%;
 	aspect-ratio: 1/1;
-	border-radius: 50%;
+	transition: 0.5s;
 }
 
-.paint .paint-circle.kobe {
+.sample:hover .sample-square {
+	border: 25px solid #e5e0da;
+}
+
+.sample .sample-square.kobe {
 	background-color: rgb(35, 40, 32);
 }
-.paint .paint-circle.pantanal {
+.sample .sample-square.pantanal {
 	background-color: rgb(38, 57, 58);
 }
-.paint .paint-circle.glenveagh {
+.sample .sample-square.glenveagh {
 	background-color: rgb(75, 86, 83);
 }
-.paint .paint-circle.hazel {
+.sample .sample-square.hazel {
 	background-color: rgb(118, 124, 115);
 }
-.paint .paint-circle.kigali {
+.sample .sample-square.kigali {
 	background-color: rgb(68, 95, 69);
 }
-.paint .paint-circle.greensburg {
+.sample .sample-square.greensburg {
 	background-color: rgb(145, 160, 132);
 }
-.paint .paint-circle.eslamabad {
+.sample .sample-square.eslamabad {
 	background-color: rgb(181, 178, 154);
 }
-.paint .paint-circle.havasupai {
+.sample .sample-square.havasupai {
 	background-color: rgb(161, 79, 61);
 }
-.paint .paint-circle.st-mary {
+.sample .sample-square.st-mary {
 	background-color: rgb(134, 100, 99);
 }
-.paint .paint-circle.granada {
+.sample .sample-square.granada {
 	background-color: rgb(134, 100, 99);
 }
-.paint .paint-circle.chamarel {
+.sample .sample-square.chamarel {
 	background-color: rgb(162, 69, 74);
 }
 
-.paint .paint-circle.navajo {
+.sample .sample-square.navajo {
 	background-color: rgb(181 79 72);
 }
-.paint .paint-circle.arizona {
+.sample .sample-square.arizona {
 	background-color: rgb(203, 109, 104);
 }
-.paint .paint-circle.broken-hill {
+.sample .sample-square.broken-hill {
 	background-color: rgb(196, 193, 198);
 }
 
-.paint .paint-circle.trouville {
+.sample .sample-square.trouville {
 	background-color: rgb(222, 219, 220);
 }
-.paint .paint-circle.wexford {
+.sample .sample-square.wexford {
 	background-color: rgb(205, 208, 206);
 }
-.paint .paint-circle.vilnius {
+.sample .sample-square.vilnius {
 	background-color: rgb(223, 195, 175);
 }
-.paint .paint-circle.baaja {
+.sample .sample-square.baaja {
 	background-color: rgb(238, 199, 166);
 }
-.paint .paint-circle.baku {
+.sample .sample-square.baku {
 	background-color: rgb(230, 204, 179);
 }
-.paint .paint-circle.ajman {
+.sample .sample-square.ajman {
 	background-color: rgb(251, 238, 216);
 }
-.paint .paint-circle.merzouga {
+.sample .sample-square.merzouga {
 	background-color: rgb(220, 205, 197);
 }
-.paint .paint-circle.sidi-ali {
+.sample .sample-square.sidi-ali {
 	background-color: rgb(222, 208, 203);
 }
-.paint .paint-circle.ricasoli {
+.sample .sample-square.ricasoli {
 	background-color: rgb(211, 170, 169);
 }
-.paint .paint-circle.monte-castelo {
+.sample .sample-square.monte-castelo {
 	background-color: rgb(248, 234, 191);
 }
-.paint .paint-circle.burano {
+.sample .sample-square.burano {
 	background-color: rgb(243, 202, 89);
 }
-.paint .paint-circle.gallipoli {
+.sample .sample-square.gallipoli {
 	background-color: rgb(236, 195, 99);
 }
-.paint .paint-circle.bo-kaap {
+.sample .sample-square.bo-kaap {
 	background-color: rgb(207, 93, 60);
 }
-.paint .paint-circle.oyo {
+.sample .sample-square.oyo {
 	background-color: rgb(175, 162, 144);
 }
-.paint .paint-circle.belleville {
+.sample .sample-square.belleville {
 	background-color: rgb(189, 186, 175);
 }
-.paint .paint-circle.dakhla {
+.sample .sample-square.dakhla {
 	background-color: rgb(214, 208, 196);
 }
-.paint .paint-circle.ponticelli {
+.sample .sample-square.ponticelli {
 	background-color: rgb(223, 201, 174);
 }
-.paint .paint-circle.rimini {
+.sample .sample-square.rimini {
 	background-color: rgb(215, 196, 165);
 }
-.paint .paint-circle.niigata {
+.sample .sample-square.niigata {
 	background-color: rgb(81, 27, 32);
 }
 
-.paint .paint-circle.port-louis {
+.sample .sample-square.port-louis {
 	background-color: rgb(10, 12, 27);
 }
-.paint .paint-circle.khao-sok {
+.sample .sample-square.khao-sok {
 	background-color: rgb(35, 15, 21);
 }
-.paint .paint-circle.baden-baden {
+.sample .sample-square.baden-baden {
 	background-color: rgb(35, 33, 33);
 }
-.paint .paint-circle.karlstad {
+.sample .sample-square.karlstad {
 	background-color: rgb(58, 44, 56);
 }
-.paint .paint-circle.chebourg {
+.sample .sample-square.chebourg {
 	background-color: rgb(55, 60, 70);
 }
-.paint .paint-circle.reign {
+.sample .sample-square.reign {
 	background-color: rgb(105, 114, 125);
 }
-.paint .paint-circle.chefchaouen {
+.sample .sample-square.chefchaouen {
 	background-color: rgb(156, 174, 171);
 }
-.paint .paint-circle.oldbury {
+.sample .sample-square.oldbury {
 	background-color: rgb(68, 67, 68);
 }
-.paint .paint-circle.bampton {
+.sample .sample-square.bampton {
 	background-color: rgb(101, 100, 103);
 }
-.paint .paint-circle.saint-malo {
+.sample .sample-square.saint-malo {
 	background-color: rgb(128, 126, 125);
 }
-.paint .paint-circle.portland {
+.sample .sample-square.portland {
 	background-color: rgb(169, 168, 163);
 }
-.paint .paint-circle.nova {
+.sample .sample-square.nova {
 	background-color: rgb(127, 135, 87);
 }
-.paint .paint-circle.rosemont {
+.sample .sample-square.rosemont {
 	background-color: rgb(198, 188, 138);
 }
-.paint .paint-circle.barilius {
+.sample .sample-square.barilius {
 	background-color: rgb(177, 159, 156);
 }
-.paint .paint-circle.courchevel {
+.sample .sample-square.courchevel {
 	background-color: rgb(250, 250, 244);
 }
 
-.paint .paint-info {
+.sample .sample-info {
 	margin-top: 0.5rem;
-}
-.paint .paint-circle img {
-	border-radius: 50%;
-	opacity: 0%;
-	transition: opacity 0.5s;
-}
-.paint:hover .paint-circle img,
-.paint:active .paint-circle img {
-	opacity: 100%;
 }
 
 .testimonials {
@@ -457,7 +455,7 @@ a {
 		justify-content: center;
 	}
 
-	.paints .paints-list {
+	.samples .samples-list {
 		grid-template-columns: 1fr 1fr;
 	}
 
