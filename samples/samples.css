@@ -12,20 +12,16 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 body {
 	font-family: "Recife Display", serif;
 	margin: 0 2rem;
 }
-
 img {
 	width: 100%;
 }
-
 a {
 	text-decoration: none;
 }
-
 .cta {
 	color: white;
 	background-color: rgb(31, 30, 30);
@@ -35,12 +31,12 @@ a {
 	border-radius: 0.5rem;
 	font-weight: 900;
 }
-
 .cta:hover,
 .cta:active {
 	color: rgb(31, 30, 30);
 	background-color: white;
 }
+
 .header {
 	display: grid;
 	grid-auto-flow: column;
@@ -57,7 +53,6 @@ a {
 .header .nav-bar {
 	font-family: "Maison Neue", sans-serif;
 }
-
 .header .nav-bar-list {
 	list-style-type: none;
 	display: grid;
@@ -65,18 +60,12 @@ a {
 	gap: 1rem;
 	font-size: 0.8rem;
 }
-.header .mobile-nav-list {
-	list-style-type: none;
-	font-size: 1.5rem;
-}
-
 .header .nav-bar-link,
 .header .logo-link,
 .header .mobile-nav-link {
 	color: black;
 	position: relative;
 }
-
 .header .nav-bar-link::after,
 .header .mobile-nav-link::after {
 	content: "";
@@ -87,7 +76,6 @@ a {
 	bottom: 0;
 	left: 0;
 }
-
 .header .logo-link::after {
 	content: "";
 	width: 0;
@@ -97,13 +85,10 @@ a {
 	bottom: 4px;
 	left: 0;
 }
-
 .header .nav-bar-link:hover::after,
 .header .nav-bar-link.active::after,
 .header .logo-link:hover::after,
-.header .logo-link.active::after,
-.header .mobile-nav-link:hover::after,
-.header .mobile-nav-link.active::after {
+.header .logo-link.active::after {
 	width: 100%;
 	background-color: black;
 }
@@ -111,7 +96,6 @@ a {
 	font-size: 2rem;
 	font-weight: 400;
 }
-
 .header .nav-activator {
 	appearance: none;
 	background-color: transparent;
@@ -125,7 +109,6 @@ a {
 	left: 0;
 	height: 100vh;
 	background-color: white;
-	padding: 1rem;
 	box-shadow: 0 0 10px 10px #0000007c;
 	transform: translateX(-500px);
 	transition: 1s;
@@ -135,6 +118,21 @@ a {
 .header .nav-activator:focus .mobile-nav {
 	transform: translateX(0px);
 	visibility: visible;
+}
+.header .mobile-nav-list {
+	display: grid;
+	text-align: start;
+	list-style-type: none;
+}
+.header .mobile-nav-item {
+	font-size: 1.5rem;
+	display: block;
+	padding: 0.5rem;
+	margin-bottom: 0.25rem;
+}
+.header .mobile-nav-item:hover,
+.header .mobile-nav-item.active {
+	background-color: rgba(0, 0, 0, 0.3);
 }
 .header .mobile-nav-list .icon {
 	display: inline-block;
