@@ -140,6 +140,11 @@ a {
 	visibility: visible;
 }
 
+.header .mobile-nav-list .icon {
+	display: inline-block;
+	height: 2rem;
+}
+
 .background {
 	background-image: url(/images/index-background.jpeg);
 	height: calc(100vh - 5rem);
@@ -150,7 +155,6 @@ a {
 	margin-bottom: 2.5rem;
 	padding: 5rem 4rem;
 }
-
 .background .background-headline {
 	color: white;
 	width: 12ch;

@@ -140,6 +140,11 @@ a {
 	visibility: visible;
 }
 
+.header .mobile-nav-list .icon {
+	display: inline-block;
+	height: 2rem;
+}
+
 .main {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
