@@ -338,16 +338,16 @@ a {
 	position: relative;
 }
 .example:nth-child(1) {
-	background-image: url(/images/examples/example1.jpeg);
+	background-image: url(/images/gallery/reign.jpeg);
 }
 .example:nth-child(2) {
-	background-image: url(/images/examples/example2.jpeg);
+	background-image: url(/images/gallery/kigali.jpeg);
 }
 .example:nth-child(3) {
-	background-image: url(/images/examples/example3.jpeg);
+	background-image: url(/images/gallery/vilnius1.jpeg);
 }
 .example:nth-child(4) {
-	background-image: url(/images/examples/example4.jpeg);
+	background-image: url(/images/gallery/baden-baden.jpeg);
 }
 
 .examples .examples-headline {
