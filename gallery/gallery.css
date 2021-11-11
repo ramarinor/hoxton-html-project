@@ -256,7 +256,7 @@ a {
 	background-color: rgb(205, 208, 206);
 }
 .main .saint-malo:hover::after {
-	background-color: rgb(223, 195, 175);
+	background-color: rgb(128, 126, 125);
 }
 .main .havasupai:hover::after {
 	background-color: rgb(161, 79, 61);
