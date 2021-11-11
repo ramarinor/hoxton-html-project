@@ -397,10 +397,10 @@ a {
 	margin-bottom: 2rem;
 }
 
-.newsletter {
+.newsletter-and-social .newsletter {
 	border-right: 1px solid rgba(92, 92, 92, 0.2);
 }
-.social {
+.newsletter-and-social .social {
 	padding-left: 1rem;
 	justify-self: center;
 }
@@ -511,6 +511,7 @@ a {
 	}
 	.newsletter-and-social .social {
 		padding-left: 0;
+		padding-top: 1rem;
 	}
 	.social .social-headline {
 		font-size: 1.2rem;
