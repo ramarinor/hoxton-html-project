@@ -194,14 +194,24 @@ a {
 }
 .sample .sample-square {
 	border-color: #e5e0da;
-	color: white;
+	display: grid;
+	align-items: flex-end;
+	padding-bottom: 0.5rem;
+	color: transparent;
 	border-radius: 5%;
 	aspect-ratio: 1/1;
-	transition: 0.5s;
+	border: 0px solid transparent;
+	transition: color 1s, border 0.5s;
 }
 
-.sample:hover .sample-square {
-	border: 25px solid #e5e0da;
+.sample:hover .sample-square:not(.blackfont) {
+	color: white;
+	border: 2rem solid #e5e0da;
+}
+
+.sample:hover .sample-square.black-font {
+	color: black;
+	border: 2rem solid #e5e0da;
 }
 
 .sample .sample-square.kobe {
